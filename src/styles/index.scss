@@ -1,8 +1,8 @@
 @font-face {
-	font-family: "uncutSans";
-	src: url(./fonts/Uncut-Sans-Regular.otf);
-	font-style: normal;
+  font-family: "MBA Slice Mono";
+  src: url('fonts/MBASliceMono-Regular.otf');
 }
+
 html {
   padding: 0;
   margin: 0;
@@ -15,7 +15,7 @@ body {
   height: 100%;
   background-color: #ffbfd9;
   font-size: 2rem;
-  font-family: uncutSans;
+  font-family: "MBA Slice Mono";
 }
 .container {
   margin: auto;
