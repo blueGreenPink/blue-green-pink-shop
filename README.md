@@ -1,5 +1,5 @@
 # Rust WebDev Template
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3221d93a-4911-4e24-a2bb-484786b2c97c/deploy-status)](https://app.netlify.com/sites/rust-webdev-template/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5a5749bd-77fb-4d94-a7b3-7b0182356abc/deploy-status)](https://app.netlify.com/sites/bluegreenpink/deploys)
 
 A Template for a basic static site using Rust 
 
