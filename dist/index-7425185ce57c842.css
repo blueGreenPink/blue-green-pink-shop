@@ -25,8 +25,23 @@ body {
   text-align: center;
 }
 
-.titleStyle {
+.containerStyle {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.titleStyle, .titleStyle--pink, .titleStyle--green, .titleStyle--blue {
+  display: grid;
   font-size: 10rem;
+}
+.titleStyle--blue {
+  color: #5e9dff;
+}
+.titleStyle--green {
+  color: #5effc3;
+}
+.titleStyle--pink {
+  color: #ff90db;
 }
 
 .textStyle {

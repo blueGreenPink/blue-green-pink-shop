@@ -23,8 +23,25 @@ body {
   align-content: center;
   text-align: center;
 }
+.containerStyle {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
 .titleStyle {
+  display: grid;
   font-size: 10rem;
+  &--blue {
+    @extend .titleStyle;
+    color: #5e9dff;
+  }
+  &--green {
+    @extend .titleStyle;
+    color: #5effc3;
+  }
+  &--pink {
+    @extend .titleStyle;
+    color: #ff90db;
+  }
 }
 .textStyle {
   font-size: 4rem;
