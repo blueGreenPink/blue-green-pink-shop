@@ -14,7 +14,7 @@ pub fn TitleCard() -> impl IntoView {
 pub fn LandingText() -> impl IntoView {
     view! {
         <div class="container">
-            <p class="textStyle">lifestyle brand</p>
+            <p class="textStyle">lifestyle and apparel brand</p>
         </div>
     }
 }

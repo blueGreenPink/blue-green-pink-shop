@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "MBA Slice Mono";
+  font-family: 'MBA Slice Mono';
   src: url('fonts/MBASliceMono-Regular.otf');
 }
 
@@ -13,10 +13,37 @@ body {
   padding: 1rem;
   width: 100%;
   height: 100%;
-  background-color: #ffbfd9;
+  background-color: #fbecdc;
   font-size: 2rem;
-  font-family: "MBA Slice Mono";
+  font-family: 'MBA Slice Mono';
 }
+
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
 .container {
   margin: auto;
   justify-content: center;
@@ -59,6 +86,16 @@ body {
   justify-content: space-between;
   color: #292929;
 }
-.textNav:link, .textNav:visited {
+.textNav:link,
+.textNav:visited {
   text-decoration: none;
+}
+
+@include sm {
+}
+@include md {
+}
+@include lg {
+}
+@include xl {
 }
