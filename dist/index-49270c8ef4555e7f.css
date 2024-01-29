@@ -1,39 +1,13 @@
-$screen-sm-min: 576px;
-$screen-md-min: 768px;
-$screen-lg-min: 992px;
-$screen-xl-min: 1200px;
-
-@mixin sm {
-  @media (min-width: #{$screen-sm-min}) {
-    @content;
-  }
-}
-@mixin md {
-  @media (min-width: #{$screen-md-min}) {
-    @content;
-  }
-}
-@mixin lg {
-  @media (min-width: #{$screen-lg-min}) {
-    @content;
-  }
-}
-@mixin xl {
-  @media (min-width: #{$screen-xl-min}) {
-    @content;
-  }
-}
-
 @font-face {
-  font-family: 'MBA Slice Mono';
-  src: url('fonts/MBASliceMono-Regular.otf');
+  font-family: "MBA Slice Mono";
+  src: url("fonts/MBASliceMono-Regular.otf");
 }
-
 html {
   padding: 0;
   margin: 0;
   font-size: 10px;
 }
+
 body {
   margin: auto;
   padding: 1rem;
@@ -41,7 +15,7 @@ body {
   height: 100%;
   background-color: #fbecdc;
   font-size: 2rem;
-  font-family: 'MBA Slice Mono';
+  font-family: "MBA Slice Mono";
 }
 
 .container {
@@ -50,25 +24,23 @@ body {
   align-content: center;
   text-align: center;
 }
+
 .containerPage {
   margin-top: 2.5rem;
 }
 
-.textTitle {
+.textTitle, .textTitle--pink, .textTitle--green, .textTitle--blue {
   display: inline;
   font-size: 4rem;
-  &--blue {
-    @extend .textTitle;
-    color: #5e9dff;
-  }
-  &--green {
-    @extend .textTitle;
-    color: #5effc3;
-  }
-  &--pink {
-    @extend .textTitle;
-    color: #ff90db;
-  }
+}
+.textTitle--blue {
+  color: #5e9dff;
+}
+.textTitle--green {
+  color: #5effc3;
+}
+.textTitle--pink {
+  color: #ff90db;
 }
 
 .textSubtitle {
@@ -79,6 +51,7 @@ body {
   font-size: 3rem;
   color: #000000;
 }
+
 .textLink:link,
 .textNav:visited {
   text-decoration: none;
@@ -89,6 +62,7 @@ body {
   justify-content: space-between;
   text-align: center;
 }
+
 .textNav {
   margin: auto;
   padding: 3rem;
@@ -96,13 +70,14 @@ body {
   color: #000000;
   font-size: 1.5rem;
 }
+
 .textNav:link,
 .textNav:visited {
   text-decoration: none;
 }
 
-@include sm {
-  .textTitle {
+@media (min-width: 576px) {
+  .textTitle, .textTitle--blue, .textTitle--green, .textTitle--pink {
     font-size: 6rem;
   }
   .textSubtitle {
@@ -112,8 +87,8 @@ body {
     font-size: 2rem;
   }
 }
-@include md {
-  .textTitle {
+@media (min-width: 768px) {
+  .textTitle, .textTitle--blue, .textTitle--green, .textTitle--pink {
     font-size: 8rem;
   }
   .textSubtitle {
@@ -123,8 +98,8 @@ body {
     font-size: 3rem;
   }
 }
-@include lg {
-  .textTitle {
+@media (min-width: 992px) {
+  .textTitle, .textTitle--blue, .textTitle--green, .textTitle--pink {
     font-size: 10rem;
   }
   .textSubtitle {
@@ -134,8 +109,8 @@ body {
     font-size: 3rem;
   }
 }
-@include xl {
-  .textTitle {
+@media (min-width: 1200px) {
+  .textTitle, .textTitle--blue, .textTitle--green, .textTitle--pink {
     font-size: 12rem;
   }
   .textSubtitle {

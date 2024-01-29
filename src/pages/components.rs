@@ -4,9 +4,9 @@ use leptos::*;
 pub fn TitleCard() -> impl IntoView {
     view! {
         <div class="container">
-            <p class="titleStyle--blue">Blue</p>
-            <p class="titleStyle--green">Green</p>
-            <p class="titleStyle--pink">Pink</p>
+            <p class="textTitle--blue">Blue</p>
+            <p class="textTitle--green">Green</p>
+            <p class="textTitle--pink">Pink</p>
         </div>
     }
 }
@@ -14,7 +14,7 @@ pub fn TitleCard() -> impl IntoView {
 pub fn LandingText() -> impl IntoView {
     view! {
         <div class="container">
-            <p class="textStyle">lifestyle and apparel brand</p>
+            <p class="textSubtitle">lifestyle/apparel brand</p>
         </div>
     }
 }
