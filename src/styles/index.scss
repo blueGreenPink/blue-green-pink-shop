@@ -28,7 +28,7 @@ body {
   grid-template-rows: 1fr 1fr 1fr;
 }
 .titleStyle {
-  display: grid;
+  display: inline;
   font-size: 10rem;
   &--blue {
     @extend .titleStyle;
@@ -45,4 +45,20 @@ body {
 }
 .textStyle {
   font-size: 4rem;
+}
+
+.containerNav {
+  margin: auto;
+  display: flexbox;
+  justify-content: space-between;
+  text-align: center;
+}
+.textNav {
+  margin: auto;
+  padding: 2rem;
+  justify-content: space-between;
+  color: #292929;
+}
+.textNav:link, .textNav:visited {
+  text-decoration: none;
 }

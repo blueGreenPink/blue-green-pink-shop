@@ -31,7 +31,7 @@ body {
 }
 
 .titleStyle, .titleStyle--pink, .titleStyle--green, .titleStyle--blue {
-  display: grid;
+  display: inline;
   font-size: 10rem;
 }
 .titleStyle--blue {
@@ -46,4 +46,22 @@ body {
 
 .textStyle {
   font-size: 4rem;
+}
+
+.containerNav {
+  margin: auto;
+  display: flexbox;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.textNav {
+  margin: auto;
+  padding: 2rem;
+  justify-content: space-between;
+  color: #292929;
+}
+
+.textNav:link, .textNav:visited {
+  text-decoration: none;
 }
