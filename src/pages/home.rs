@@ -6,7 +6,7 @@ use crate::pages::components::*;
 #[component]
 pub fn PageHome() -> impl IntoView {
     view! {
-        <div>
+        <div class="containerPage">
             <TitleCard/>
             <LandingText/>
         </div>
