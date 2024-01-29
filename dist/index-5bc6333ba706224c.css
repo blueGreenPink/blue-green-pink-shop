@@ -1,13 +1,13 @@
 @font-face {
   font-family: "MBA Slice Mono";
-  src: url('fonts/MBASliceMono-Regular.otf');
+  src: url("fonts/MBASliceMono-Regular.otf");
 }
-
 html {
   padding: 0;
   margin: 0;
   font-size: 10px;
 }
+
 body {
   margin: auto;
   padding: 1rem;
@@ -17,32 +17,33 @@ body {
   font-size: 2rem;
   font-family: "MBA Slice Mono";
 }
+
 .container {
   margin: auto;
   justify-content: center;
   align-content: center;
   text-align: center;
 }
+
 .containerStyle {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
 }
-.titleStyle {
+
+.titleStyle, .titleStyle--pink, .titleStyle--green, .titleStyle--blue {
   display: inline;
   font-size: 10rem;
-  &--blue {
-    @extend .titleStyle;
-    color: #5e9dff;
-  }
-  &--green {
-    @extend .titleStyle;
-    color: #5effc3;
-  }
-  &--pink {
-    @extend .titleStyle;
-    color: #ff90db;
-  }
 }
+.titleStyle--blue {
+  color: #5e9dff;
+}
+.titleStyle--green {
+  color: #5effc3;
+}
+.titleStyle--pink {
+  color: #ff90db;
+}
+
 .textStyle {
   font-size: 4rem;
 }
@@ -53,12 +54,14 @@ body {
   justify-content: space-between;
   text-align: center;
 }
+
 .textNav {
   margin: auto;
   padding: 2rem;
   justify-content: space-between;
   color: #292929;
 }
+
 .textNav:link, .textNav:visited {
   text-decoration: none;
 }

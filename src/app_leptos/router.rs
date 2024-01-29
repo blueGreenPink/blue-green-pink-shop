@@ -7,11 +7,11 @@ use crate::pages::shop::PageShop;
 #[component]
 pub fn SiteRouter() -> impl IntoView {
     view! {
-        <div>
+        <div class="containerNav">
             <Router>
                 <nav>
-                    <A exact=true href="/">"home"</A>
-                    <A href="shop">"shop"</A>
+                    <A class="textNav" exact=true href="/">"home"</A>
+                    <A class="textNav" href="shop">"shop"</A>
                 </nav>
                 <main>
                     <Routes>
