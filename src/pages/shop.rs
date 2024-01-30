@@ -21,7 +21,7 @@ pub fn PageShop() -> impl IntoView {
         Item {
             name: "happy guys tee".to_string(),
             image_url: "".to_string(),
-            shop_url: "https://www.bonfire.com/bgp-logo-tee/".to_string(),
+            shop_url: "https://www.bonfire.com/happy-guys-tee/".to_string(),
             price: 35,
         },
     ]);

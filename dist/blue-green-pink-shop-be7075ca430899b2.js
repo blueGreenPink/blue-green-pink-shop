@@ -836,7 +836,7 @@ async function __wbg_init(input) {
     if (wasm !== undefined) return wasm;
 
     if (typeof input === 'undefined') {
-        input = new URL('blue-green-pink-shop-fff465dc4420e37a_bg.wasm', import.meta.url);
+        input = new URL('blue-green-pink-shop-be7075ca430899b2_bg.wasm', import.meta.url);
     }
     const imports = __wbg_get_imports();
 
