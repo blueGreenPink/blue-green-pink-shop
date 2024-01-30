@@ -9,3 +9,4 @@ edition = "2021"
 leptos = { version = "0.5.2", features = ["csr", "nightly"] }
 leptos_router = { version = "0.5.2", features = ["csr", "nightly"] }
 serde = "1.0.190"
+toml = "0.8.8"
