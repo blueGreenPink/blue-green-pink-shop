@@ -85,7 +85,6 @@ body {
 
 .containerShopItem {
   display: grid;
-  width: 80%;
   grid-template-columns: 1fr;
   justify-items: center;
 }
@@ -93,6 +92,7 @@ body {
 .imageGridItem {
   width: 20rem;
   height: 20rem;
+  margin-top: 2.5rem;
   background-color: rgba(255, 255, 255, 0);
 }
 
@@ -130,6 +130,10 @@ body {
   }
   .textNav {
     font-size: 3rem;
+  }
+  .imageGridItem {
+    width: 40rem;
+    height: 40rem;
   }
 }
 @media (min-width: 1200px) {

@@ -34,8 +34,10 @@ pub fn PageShop() -> impl IntoView {
                         let:child
                     >
                         <div class="containerShopItem">
-                            <img class="imageGridItem" src={child.image_url} alt={child.name.clone()} />
-                            <a class="textLink" href={child.shop_url} target="_blank">{child.name.clone()}</a>
+                            <a href={child.shop_url.clone()}>
+                                <img class="imageGridItem" src={child.image_url} alt={child.name.clone()} />
+                            </a>
+                            <a class="textLink" href={child.shop_url.clone()} target="_blank">{child.name.clone()}</a>
                         </div>
                     </For>
             </div>
