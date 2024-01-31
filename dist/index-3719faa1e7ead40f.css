@@ -27,8 +27,8 @@ body {
   text-align: center;
 }
 
-.containerPage {
-  margin-top: 2.5rem;
+.spacer {
+  height: 8rem;
 }
 
 .textTitle, .textTitle--pink, .textTitle--green, .textTitle--blue {
