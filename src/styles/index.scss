@@ -108,10 +108,15 @@ body {
 	justify-items: center;
 }
 .containerShopItem {
-	height: 100rem;
+  display: grid;
 	width: 80%;
-	margin-right: 6%;
-	margin-bottom: 8%;
+	grid-template-columns: 1fr;
+	justify-items: center;
+}
+.imageGridItem {
+  width: 20rem;
+  height: 20rem;
+  background-color: #ffffff00;
 }
 
 @include sm {

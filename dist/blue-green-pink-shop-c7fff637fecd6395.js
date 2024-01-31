@@ -785,16 +785,16 @@ function __wbg_get_imports() {
     imports.wbg.__wbindgen_throw = function(arg0, arg1) {
         throw new Error(getStringFromWasm0(arg0, arg1));
     };
-    imports.wbg.__wbindgen_closure_wrapper4491 = function(arg0, arg1, arg2) {
-        const ret = makeMutClosure(arg0, arg1, 356, __wbg_adapter_32);
+    imports.wbg.__wbindgen_closure_wrapper4509 = function(arg0, arg1, arg2) {
+        const ret = makeMutClosure(arg0, arg1, 359, __wbg_adapter_32);
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper5641 = function(arg0, arg1, arg2) {
-        const ret = makeMutClosure(arg0, arg1, 416, __wbg_adapter_35);
+    imports.wbg.__wbindgen_closure_wrapper5659 = function(arg0, arg1, arg2) {
+        const ret = makeMutClosure(arg0, arg1, 419, __wbg_adapter_35);
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper9829 = function(arg0, arg1, arg2) {
-        const ret = makeMutClosure(arg0, arg1, 458, __wbg_adapter_38);
+    imports.wbg.__wbindgen_closure_wrapper9847 = function(arg0, arg1, arg2) {
+        const ret = makeMutClosure(arg0, arg1, 461, __wbg_adapter_38);
         return addHeapObject(ret);
     };
 
@@ -836,7 +836,7 @@ async function __wbg_init(input) {
     if (wasm !== undefined) return wasm;
 
     if (typeof input === 'undefined') {
-        input = new URL('blue-green-pink-shop-af2f48f7ba124b06_bg.wasm', import.meta.url);
+        input = new URL('blue-green-pink-shop-c7fff637fecd6395_bg.wasm', import.meta.url);
     }
     const imports = __wbg_get_imports();
 
