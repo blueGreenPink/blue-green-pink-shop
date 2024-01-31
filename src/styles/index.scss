@@ -33,6 +33,7 @@ html {
   padding: 0;
   margin: 0;
   font-size: 10px;
+  overflow: hidden;
 }
 body {
   margin: auto;
@@ -42,6 +43,7 @@ body {
   background-color: #fbecdc;
   font-size: 2rem;
   font-family: 'MBA Slice Mono';
+  overflow-y: scroll;
 }
 
 .container {
