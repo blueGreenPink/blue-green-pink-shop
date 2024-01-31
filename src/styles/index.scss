@@ -101,6 +101,24 @@ body {
   text-decoration: none;
 }
 
+.containerShopGrid {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	justify-items: center;
+}
+.containerShopItem {
+  display: grid;
+	grid-template-columns: 1fr;
+	justify-items: center;
+}
+.imageGridItem {
+  width: 20rem;
+  height: 20rem;
+  margin-top: 2.5rem;
+  background-color: #ffffff00;
+}
+
 @include sm {
   .textTitle {
     font-size: 6rem;
@@ -112,6 +130,7 @@ body {
     font-size: 2rem;
   }
 }
+
 @include md {
   .textTitle {
     font-size: 8rem;
@@ -122,7 +141,11 @@ body {
   .textNav {
     font-size: 3rem;
   }
+  .containerShopGrid {
+		grid-template-columns: 1fr 1fr;
+  }
 }
+
 @include lg {
   .textTitle {
     font-size: 10rem;
@@ -133,7 +156,12 @@ body {
   .textNav {
     font-size: 3rem;
   }
+  .imageGridItem {
+    width: 40rem;
+    height: 40rem;
+  }
 }
+
 @include xl {
   .textTitle {
     font-size: 12rem;

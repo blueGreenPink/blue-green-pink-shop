@@ -76,6 +76,26 @@ body {
   text-decoration: none;
 }
 
+.containerShopGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+}
+
+.containerShopItem {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.imageGridItem {
+  width: 20rem;
+  height: 20rem;
+  margin-top: 2.5rem;
+  background-color: rgba(255, 255, 255, 0);
+}
+
 @media (min-width: 576px) {
   .textTitle, .textTitle--blue, .textTitle--green, .textTitle--pink {
     font-size: 6rem;
@@ -97,6 +117,9 @@ body {
   .textNav {
     font-size: 3rem;
   }
+  .containerShopGrid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media (min-width: 992px) {
   .textTitle, .textTitle--blue, .textTitle--green, .textTitle--pink {
@@ -107,6 +130,10 @@ body {
   }
   .textNav {
     font-size: 3rem;
+  }
+  .imageGridItem {
+    width: 40rem;
+    height: 40rem;
   }
 }
 @media (min-width: 1200px) {
