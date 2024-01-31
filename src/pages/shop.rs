@@ -27,15 +27,17 @@ pub fn PageShop() -> impl IntoView {
     ]);
     view! {
         <div class="container">
-            <p class="textLink">
-                <For
-                    each=data
-                    key=|state| state.name.clone()
-                    let:child
-                >
-                <a class="textLink" href={child.shop_url} target="_blank">{child.name}</a>
-                </For>
-            </p>
+            <div class="containerShopGrid">
+                    <For
+                        each=data
+                        key=|state| state.name.clone()
+                        let:child
+                    >
+                        <div class="containerShopItem">
+                            <a class="textLink" href={child.shop_url} target="_blank">{child.name}</a>
+                        </div>
+                    </For>
+            </div>
         </div>
     }
 }

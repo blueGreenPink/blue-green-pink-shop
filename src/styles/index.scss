@@ -101,6 +101,19 @@ body {
   text-decoration: none;
 }
 
+.containerShopGrid {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	justify-items: center;
+}
+.containerShopItem {
+	height: 100rem;
+	width: 80%;
+	margin-right: 6%;
+	margin-bottom: 8%;
+}
+
 @include sm {
   .textTitle {
     font-size: 6rem;
@@ -112,6 +125,7 @@ body {
     font-size: 2rem;
   }
 }
+
 @include md {
   .textTitle {
     font-size: 8rem;
@@ -122,7 +136,11 @@ body {
   .textNav {
     font-size: 3rem;
   }
+  .containerShopGrid {
+		grid-template-columns: 1fr 1fr;
+  }
 }
+
 @include lg {
   .textTitle {
     font-size: 10rem;
@@ -134,6 +152,7 @@ body {
     font-size: 3rem;
   }
 }
+
 @include xl {
   .textTitle {
     font-size: 12rem;

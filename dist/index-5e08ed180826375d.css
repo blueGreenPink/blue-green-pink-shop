@@ -76,6 +76,20 @@ body {
   text-decoration: none;
 }
 
+.containerShopGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+}
+
+.containerShopItem {
+  height: 100rem;
+  width: 80%;
+  margin-right: 6%;
+  margin-bottom: 8%;
+}
+
 @media (min-width: 576px) {
   .textTitle, .textTitle--blue, .textTitle--green, .textTitle--pink {
     font-size: 6rem;
@@ -96,6 +110,9 @@ body {
   }
   .textNav {
     font-size: 3rem;
+  }
+  .containerShopGrid {
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media (min-width: 992px) {
