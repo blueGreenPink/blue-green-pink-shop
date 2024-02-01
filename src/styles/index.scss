@@ -56,6 +56,9 @@ body {
   height: 8rem;
 }
 
+.containerTitle {
+  margin-top: 4rem;
+}
 .textTitle {
   display: inline;
   font-size: 4rem;
@@ -72,7 +75,6 @@ body {
     color: #ff90db;
   }
 }
-
 .textSubtitle {
   font-size: 2rem;
 }
@@ -88,6 +90,7 @@ body {
 
 .containerNav {
   display: flexbox;
+  margin-top: 3rem;
   justify-content: space-between;
   text-align: center;
 }
@@ -104,21 +107,22 @@ body {
 }
 
 .containerShopGrid {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr;
-	justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
 }
 .containerShopItem {
   display: grid;
-	grid-template-columns: 1fr;
-	justify-items: center;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 .imageGridItem {
   width: 20rem;
   height: 20rem;
-  margin-top: 2.5rem;
-  background-color: #ffffff00;
+  margin-top: 1rem;
 }
 
 @include sm {
@@ -130,6 +134,10 @@ body {
   }
   .textNav {
     font-size: 2rem;
+  }
+  .imageGridItem {
+    width: 30rem;
+    height: 30rem;
   }
 }
 
@@ -143,8 +151,9 @@ body {
   .textNav {
     font-size: 3rem;
   }
-  .containerShopGrid {
-		grid-template-columns: 1fr 1fr;
+  .imageGridItem {
+    width: 40rem;
+    height: 40rem;
   }
 }
 
@@ -156,11 +165,11 @@ body {
     font-size: 5rem;
   }
   .textNav {
-    font-size: 3rem;
+    padding: 8rem;
+    font-size: 4rem;
   }
-  .imageGridItem {
-    width: 40rem;
-    height: 40rem;
+  .containerShopGrid {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -171,7 +180,8 @@ body {
   .textSubtitle {
     font-size: 6rem;
   }
-  .textNav {
-    font-size: 4rem;
+  .imageGridItem {
+    width: 50rem;
+    height: 50rem;
   }
 }
