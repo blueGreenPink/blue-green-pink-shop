@@ -4,6 +4,9 @@ opt-level = 'z'
 lto = true
 codegen-units = 1
 
+[package.metadata.leptos]
+lib-profile-release = "wasm-release"
+
 [package]
 name = "blue-green-pink-shop"
 version = "0.1.0"
