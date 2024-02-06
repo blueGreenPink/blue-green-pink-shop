@@ -1,6 +1,7 @@
 @font-face {
   font-family: "MBA Slice Mono";
   src: url("fonts/MBASliceMono-Regular.otf");
+  font-display: swap;
 }
 html {
   padding: 0;
@@ -15,7 +16,7 @@ body {
   height: 100%;
   background-color: #fbecdc;
   font-size: 2rem;
-  font-family: "MBA Slice Mono", "Times New Roman";
+  font-family: "MBA Slice Mono";
 }
 
 .container {
