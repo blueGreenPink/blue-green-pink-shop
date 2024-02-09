@@ -13,6 +13,12 @@ struct Item {
 pub fn PageShop() -> impl IntoView {
     let (data, set_data) = create_signal(vec![
         Item {
+            name: "bpg logo sweater".to_string(),
+            image_url: "https://imagedelivery.net/mKjOxek3QZwwBWUu82qeLg/1c4c6334-8782-4c23-e784-eb400fd33900/public".to_string(),
+            shop_url: "https://www.bonfire.com/bgp-logo-sweater/".to_string(),
+            price: 45,
+        },
+        Item {
             name: "happy guys tee ii".to_string(),
             image_url: "https://imagedelivery.net/mKjOxek3QZwwBWUu82qeLg/531e237b-34a2-403c-36c0-0f1a5d920000/public".to_string(),
             shop_url: "https://www.bonfire.com/happy-guys-tee-ii-1/".to_string(),
