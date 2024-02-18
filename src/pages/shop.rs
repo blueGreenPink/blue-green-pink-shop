@@ -14,18 +14,18 @@ pub fn PageShop() -> impl IntoView {
     let (data, set_data) = create_signal(vec![
         Item {
             name: "black heart tee".to_string(),
-            image_url: "".to_string(),
+            image_url: "https://imagedelivery.net/mKjOxek3QZwwBWUu82qeLg/891cfa6b-df2f-45f8-0c86-0e615889de00/public".to_string(),
             shop_url: "https://www.bonfire.com/black-heart-tee/".to_string(),
             price: 45,
         },
         Item {
             name: "bob original sweater".to_string(),
-            image_url: "".to_string(),
+            image_url: "https://imagedelivery.net/mKjOxek3QZwwBWUu82qeLg/336cb4e3-d984-4086-a70b-6ce48b271000/public".to_string(),
             shop_url: "https://www.bonfire.com/bob-original-tee/".to_string(),
             price: 35,
         },
         Item {
-            name: "bpg logo sweater".to_string(),
+            name: "bpg logo hoodie".to_string(),
             image_url: "https://imagedelivery.net/mKjOxek3QZwwBWUu82qeLg/1c4c6334-8782-4c23-e784-eb400fd33900/public".to_string(),
             shop_url: "https://www.bonfire.com/bgp-logo-sweater/".to_string(),
             price: 45,
